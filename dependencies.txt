@@ -1,0 +1,120 @@
+# Frontend Dependencies
+## Core
+react
+react-dom
+react-router-dom
+@tanstack/react-query
+axios
+typescript
+vite
+
+## UI & Styling
+@chakra-ui/react
+@emotion/react
+@emotion/styled
+framer-motion
+
+## Barcode Scanning
+@zxing/browser
+@zxing/library
+
+## Development
+@types/react
+@types/react-dom
+@vitejs/plugin-react-swc
+eslint
+prettier
+@typescript-eslint/eslint-plugin
+@typescript-eslint/parser
+
+# Backend Dependencies
+## Core
+express
+typescript
+cors
+dotenv
+helmet
+
+## Database
+prisma
+@prisma/client
+postgresql
+
+## Authentication
+jsonwebtoken
+bcrypt
+cookie-parser
+
+## Types
+@types/node
+@types/express
+@types/cors
+@types/jsonwebtoken
+@types/bcrypt
+@types/cookie-parser
+
+## Development
+nodemon
+ts-node
+jest
+@types/jest
+supertest
+@types/supertest
+eslint
+prettier
+
+# Installation Commands
+
+## Frontend Setup
+```bash
+# Create Vite project
+npm create vite@latest frontend -- --template react-ts
+
+cd frontend
+
+# Install core dependencies
+npm install react-router-dom @tanstack/react-query axios
+
+# Install UI dependencies
+npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+# Install barcode scanning
+npm install @zxing/browser @zxing/library
+
+# Install dev dependencies
+npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint prettier
+```
+
+## Backend Setup
+```bash
+mkdir backend
+cd backend
+npm init -y
+
+# Install core dependencies
+npm install express typescript cors dotenv helmet
+
+# Install database dependencies
+npm install prisma @prisma/client
+npm install -g postgresql
+
+# Install authentication dependencies
+npm install jsonwebtoken bcrypt cookie-parser
+
+# Install type dependencies
+npm install -D @types/node @types/express @types/cors @types/jsonwebtoken @types/bcrypt @types/cookie-parser
+
+# Install dev dependencies
+npm install -D nodemon ts-node jest @types/jest supertest @types/supertest eslint prettier
+
+# Initialize TypeScript
+npx tsc --init
+
+# Initialize Prisma
+npx prisma init
+```
+
+# Version Requirements
+Node.js >= 18.0.0
+PostgreSQL >= 14.0
+npm >= 8.0.0 
